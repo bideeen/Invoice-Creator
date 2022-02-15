@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice Creator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="">
-        <div class="">
+    <div class="container">
+        <div class="head">
             <h1>Invoice Creator</h1>
             <p>Thanks for choosing GoodCorp, LLC!</p>
         </div>
-        <div class="">
+        <div class="subhead">
             <button id="car">Wash Car: $10</button>
             <button id="lawn">Mow Lawn: $20</button>
             <button id="weeds">Pull Weeds: $30</button>
         </div>
-        <p>Task <span style="float: right;">Total</span></p>
-        <p id="task"></p>
-        <hr>
-        <p>Notes <span style="float: right;">Total Amount</span></p>
-        <p id="total" style="float: right;"></p>
+        <div class="desc">
+            <p>Task <span style="float: right;">Total</span></p>
+            <p id="task"></p>
+            <hr>
+            <p>Notes <span style="float: right;">Total Amount</span></p>
+            <p id="total"></p>
+            <button id="reset">Send invoice</button>
+        </div>            
     </div>
     <script src="invoice.js"></script>
 </body>
